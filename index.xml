@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>naufalizza</title>
+    <link>https://examplesite.com/</link>
+    <description>Recent content on naufalizza</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 11 Feb 2021 23:30:28 +0700</lastBuildDate><atom:link href="https://examplesite.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>For Me!</title>
+      <link>https://examplesite.com/forme/</link>
+      <pubDate>Thu, 11 Feb 2021 23:37:28 +0700</pubDate>
+      
+      <guid>https://examplesite.com/forme/</guid>
+      <description>Link Penting   Presensi SIX  Stima20-21 Pak Rinaldi LMS Basis Data LMS RPL    Markdown Cheatsheet Cheatsheet by adam-p on github</description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://examplesite.com/posts/my-first-post/</link>
+      <pubDate>Thu, 11 Feb 2021 23:30:28 +0700</pubDate>
+      
+      <guid>https://examplesite.com/posts/my-first-post/</guid>
+      <description>H1 as Title this is my first post using HUGO :)</description>
+    </item>
+    
+  </channel>
+</rss>
