@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on naufalizza</title>
-    <link>https://examplesite.com/posts/</link>
+    <link>naufalizza.github.io/posts/</link>
     <description>Recent content in Posts on naufalizza</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 11 Feb 2021 23:30:28 +0700</lastBuildDate><atom:link href="https://examplesite.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Feb 2021 23:30:28 +0700</lastBuildDate><atom:link href="naufalizza.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>https://examplesite.com/posts/my-first-post/</link>
+      <link>naufalizza.github.io/posts/my-first-post/</link>
       <pubDate>Thu, 11 Feb 2021 23:30:28 +0700</pubDate>
       
-      <guid>https://examplesite.com/posts/my-first-post/</guid>
+      <guid>naufalizza.github.io/posts/my-first-post/</guid>
       <description>H1 as Title this is my first post using HUGO :)</description>
     </item>
     
