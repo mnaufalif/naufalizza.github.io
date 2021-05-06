@@ -5,188 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parcel Knapsack</title>
-    <script defer src="script.js"></script>
+    <script type="module" defer src="script.js"></script>
 
-    <style>
-        body{
-            margin: 0;
-            padding: 0;
-            width: 100vw;
-            height: 100vh;
-        }
-
-        /* TITLE */
-        #title_container{
-            margin: 0;
-            padding: 0;
-            height: 15vh;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            flex-direction: column;
-            box-sizing: border-box;
-            padding-bottom: 1em;
-            width: 100vw;
-        }
-        /* TITLE-SUBTITLE DEFAULT */
-        #title{
-            margin: 0;
-            height: fit-content;
-            width: 35vw;
-            /* background: coral; */
-        }
-        #subtitle{
-            margin: 0;
-            margin-top: 0.1em;
-            width: 35vw;
-            font-style: italic;
-            /* background: pink; */
-        }
-        /* -- MOBILE VERSION */
-        @media screen and (max-width:480px) {
-            #title{
-                width: 90vw;
-            }
-            #subtitle{
-                width: 90vw;
-            }
-        }
-        /* ------------------------ */
-
-        .main{
-            margin: 0;
-            padding: 0;
-            width: 100vw;
-            min-height: 85vh;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            box-sizing: border-box;
-        }
-
-        /* MAIN CONTAINER DEFAULT */
-        .main_content{
-            width: 35vw;
-        }
-        /* -- MOBILE VERSION */
-        @media screen and (max-width:480px) {
-            .main_content{
-                width: 90vw;
-            }
-        }
-        
-        #list_item{
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            flex-direction: column;
-        }
-        
-        #add_item{
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            padding-bottom: 5px;
-
-            /* testing */
-            /* background-color: salmon; */
-        }
-
-        #add_item #input_add_item{
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 100%;
-        }
-
-        #add_item #button_add{
-            padding: 0.2em 1.2em;
-        }
-
-        .add_item_component{
-            padding: 0.5em;
-            margin-top: 5px;
-            box-sizing: border-box;
-            width: 100%;
-        }
-
-        .item_card{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: stretch;
-            flex-direction: row;
-            box-sizing: border-box;
-        }
-
-        .item_card_name{
-            flex-basis: 60%;
-        }
-        
-        .item_card_weight{
-            flex-basis: 15%;
-        }
-        
-        .item_card_price{
-            flex-basis: 25%;
-        }
-
-
-        /* show hide */
-        #show_hide_checkbox{
-            display: none;
-        }
-
-        .show_hide_item{
-            display: none;
-            margin-bottom: 1.5em;
-        }
-
-        .visible_on_check{
-            display: none;
-            width: 100%;
-            padding: 0.5em;
-            box-sizing: border-box;
-            text-align: center;
-            cursor: pointer;
-            border: 1px solid black;
-            margin-bottom: 0.2em;
-
-            background: #000;
-            color: white;
-            /* font-weight: bold; */
-            letter-spacing: 0.1em;
-        }
-        .visible_on_uncheck{
-            display: block;
-            width: 100%;
-            padding: 0.5em;
-            box-sizing: border-box;
-            text-align: center;
-            cursor: pointer;
-            border: 1px solid black;
-            margin-bottom: 0.2em;
-        }
-
-        #show_hide_checkbox:checked ~ .show_hide_item{
-            display: block;
-        }
-        #show_hide_checkbox:checked ~ .visible_on_check{
-            display: block;
-        }
-        #show_hide_checkbox:checked ~ .visible_on_uncheck{
-            display: none;
-        }
-        /* --- */
-    </style>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/title.css">
+    <link rel="stylesheet" href="./styles/add_item.css">
+    <link rel="stylesheet" href="./styles/list_item.css">
+    <link rel="stylesheet" href="./styles/card.css">
+    <link rel="stylesheet" href="./styles/show_hide.css">
 
 
 </head>
@@ -197,6 +24,7 @@
         <p id="subtitle">Oleh M. Naufal Izza F. - 13519088</p>
     </div>
 
+    <!-- MAIN -->
     <div class="main">
         <div class="main_content">
             
@@ -204,11 +32,6 @@
             <div id="list_item">
                 <strong><h3 id="list_item_title">List Barang:</h3></strong>
                 <div id="item_container">
-                    <div class="item_card">
-                        <div class="item_card_name">item 1 dasjhdkjah shadh akjsh dksad asd asd lsahdjahsjkd hkjsa hkjh askjhd kashd kjdkj hs kjhjdhjh s jhaskjdh asjkh dkhaskj hdkasj</div>
-                        <div class="item_card_weight">12 kg</div>
-                        <div class="item_card_profit">Rp100.000</div>
-                    </div>
                 </div>
             </div>
     
@@ -232,5 +55,7 @@
         </div>
         
     </div>
+
+    
 </body>
 </html>
