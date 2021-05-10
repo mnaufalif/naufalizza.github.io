@@ -1,0 +1,38 @@
+
+/* TITLE */
+#title_container{
+    margin: 0;
+    padding: 0;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-bottom: 1rem;
+    width: 100vw;
+}
+/* TITLE-SUBTITLE DEFAULT */
+#title{
+    margin: 0;
+    height: fit-content;
+    width: 35vw;
+    /* background: coral; */
+}
+#subtitle{
+    margin: 0;
+    margin-top: 0.1rem;
+    width: 35vw;
+    font-style: italic;
+    /* background: pink; */
+}
+/* -- MOBILE VERSION */
+@media screen and (max-width:768px) {
+    #title{
+        width: 90vw;
+    }
+    #subtitle{
+        width: 90vw;
+    }
+}
+/* ------------------------ */

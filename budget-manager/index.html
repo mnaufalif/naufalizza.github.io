@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Manager</title>
+    <script type="module" defer src="script.js"></script>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/title.css">
+    <link rel="stylesheet" href="./styles/add_item.css">
+    <link rel="stylesheet" href="./styles/list_item.css">
+    <link rel="stylesheet" href="./styles/card.css">
+    <link rel="stylesheet" href="./styles/show_hide.css">
+
+    <style>
+        #main_content{
+            display: block;
+        }
+        #result_page{
+            display: none;
+        }
+        .reset_button{
+            display: inline-block;
+            border: none;
+            padding: 0.5rem;
+            margin: 0;
+            margin-bottom: 0.2rem;
+            text-decoration: none;
+            background: white;
+            color: black;
+            font-family: sans-serif;
+            font-size: 1rem;
+            cursor: pointer;
+            text-align: center;
+            transition: background 250ms ease-in-out, 
+                        transform 150ms ease;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+    </style>
+
+
+</head>
+<body>
+    <!-- TITLE -->
+    <div id="title_container">
+        <h1 id="title">Budget Manager</h1>
+        <p id="subtitle">Oleh M. Naufal Izza F. - 13519088</p>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+        <div id="main_content" class="main_content">
+            
+            <!-- MONTHLY BUDGET -->
+            <div id="monthly_budget">
+                <strong><h3 id="monthly_budget_title">Budget Bulanan: Rp<span id="monthly_budget_label"></span></strong></h3>
+                <input id="monthly_budget_input" type="number" placeholder="Atur budget bulanan (Rp)">
+                <button id="monthly_budget_button">Atur!</button> 
+            </div>
+
+            <!-- LIST ITEM -->
+            <div id="list_item">
+                <strong><h3 id="list_item_title">List Daily Budget:</h3></strong>
+                <div id="item_container">
+                </div>
+            </div>
+    
+            <hr/>
+            
+            <!-- ADD ITEM -->
+            <div id="add_item" class="show_hide">
+                <input type="checkbox" id="show_hide_checkbox">
+                <div class="show_hide_item">
+                    <strong><h3 id="add_item_title">Tambah Daily Budget</h3></strong>
+                    <div id="input_add_item">
+                        <input id="added_item_name" class="add_item_component" type="text" placeholder="Budget Label *" required>
+                        <input id="added_item_profit" class="add_item_component" type="number" placeholder="Budget (Rp) *" required>
+                        <input id="added_item_weight" class="add_item_component" type="number" placeholder="Max occurence (in 30 days)">
+                    </div>
+                    <button id="button_add" class="add_item_component">+</button>
+                </div>
+                <label class="visible_on_uncheck" for="show_hide_checkbox">Tambah Daily Budget</label>
+                <label class="visible_on_check" for="show_hide_checkbox">Tutup</label>
+            </div>
+            <button id="show_result_button" class="reset_button visible_on_uncheck" style="background-color: black; color: white;">Hitung</button>
+        </div>
+        
+        <!-- RESULT -->
+        <div id="result_page" class="main_content">
+            <button id="back_to_main_button" class="reset_button visible_on_uncheck" style="background-color: black; color: white;">Kembali</button>
+        </div>
+
+
+    </div>
+</body>
+</html>

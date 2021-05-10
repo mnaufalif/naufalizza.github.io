@@ -1,0 +1,46 @@
+/* show hide */
+#show_hide_checkbox{
+    display: none;
+}
+
+.show_hide_item{
+    display: none;
+    margin-bottom: 1.5rem;
+}
+
+.visible_on_check{
+    display: none;
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+    margin-bottom: 0.2rem;
+
+    background: #000;
+    color: white;
+    /* font-weight: bold; */
+    letter-spacing: 0.1rem;
+}
+.visible_on_uncheck{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+    margin-bottom: 0.2rem;
+}
+
+#show_hide_checkbox:checked ~ .show_hide_item{
+    display: block;
+}
+#show_hide_checkbox:checked ~ .visible_on_check{
+    display: block;
+}
+#show_hide_checkbox:checked ~ .visible_on_uncheck{
+    display: none;
+}
+/* --- */
