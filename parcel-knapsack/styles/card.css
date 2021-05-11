@@ -56,7 +56,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.item_card_profit{
+.item_card_price{
     display: flex;
     justify-content: center;
     align-items: center;

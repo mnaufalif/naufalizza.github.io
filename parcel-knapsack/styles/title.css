@@ -17,6 +17,8 @@
     margin: 0;
     height: fit-content;
     width: 35vw;
+    display: flex;
+    justify-content:flex-start;
     /* background: coral; */
 }
 #subtitle{
@@ -26,12 +28,22 @@
     font-style: italic;
     /* background: pink; */
 }
+#link_yt{
+    margin: 0;
+    margin-top: 0.1rem;
+    width: 35vw;
+    font-style: italic;
+    color: pink;
+}
 /* -- MOBILE VERSION */
 @media screen and (max-width:768px) {
     #title{
         width: 90vw;
     }
     #subtitle{
+        width: 90vw;
+    }
+    #link_yt{
         width: 90vw;
     }
 }

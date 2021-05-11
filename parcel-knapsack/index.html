@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parcel Knapsack</title>
-    <script type="module" defer src="script.js"></script>
+    <script type="module" defer src="./js/script.js"></script>
 
     <!-- STYLES -->
     <link rel="stylesheet" href="./styles/main.css">
@@ -22,12 +22,21 @@
     <div id="title_container">
         <h1 id="title">Parcel Knapsack</h1>
         <p id="subtitle">Oleh M. Naufal Izza F. - 13519088</p>
+        <p id="link_yt"><a href="https://www.youtube.com/watch?v=fr4y_zmXSNU" target="_blank">link demo (youtube)</a></p>
     </div>
 
     <!-- MAIN -->
     <div class="main">
         <div class="main_content">
-            
+            <!-- BUDGET -->
+            <h3>Budget bulanan: Rp<span id="budget_label"></span></h3>
+            <div id="set_limit">
+                <input id="set_limit_input" type="number" placeholder="Atur kapasitas (kg)"/>
+                <button id="set_limit_button">Atur</button>
+            </div>
+            <hr/>
+
+
             <!-- LIST ITEM -->
             <div id="list_item">
                 <strong><h3 id="list_item_title">List Barang:</h3></strong>
@@ -35,6 +44,8 @@
                 </div>
             </div>
     
+            <!-- COUNT -->
+            <button id="process_button">Proses</button>
             <hr/>
             
             <!-- ADD ITEM -->
@@ -45,9 +56,10 @@
                     <div id="input_add_item">
                         <input id="added_item_name" class="add_item_component" type="text" placeholder="Nama Barang">
                         <input id="added_item_weight" class="add_item_component" type="number" placeholder="Berat (kg)">
-                        <input id="added_item_profit" class="add_item_component" type="number" placeholder="Profit (Rp)">
+                        <input id="added_item_price" class="add_item_component" type="number" placeholder="Profit (Rp)">
                     </div>
                     <button id="button_add" class="add_item_component">+</button>
+                    <button id="add_dummy_button">contoh sample</button>
                 </div>
                 <label class="visible_on_uncheck" for="show_hide_checkbox">Tambah Barang</label>
                 <label class="visible_on_check" for="show_hide_checkbox">Tutup</label>
@@ -56,6 +68,13 @@
         
     </div>
 
-    
+    <!-- <form action="https://formsubmit.co/contact.naufalizza@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://naufalizza.github.io">
+        <input type="hidden" name="_subject" value="Local Knapsack">
+        <input type="text" name="name" placeholder="name" required>
+        <input type="email" name="email" placeholder="email" required>
+        <button type="submit">Send</button>
+   </form>      -->
 </body>
 </html>

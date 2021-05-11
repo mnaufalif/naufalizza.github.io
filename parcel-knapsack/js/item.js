@@ -1,16 +1,16 @@
-class Card{
-    constructor(id, name, weight, profit){
+class Item{
+    constructor(id, name, max_occurence, price){
         this.id = id;
         this.name = name;
-        this.weight = weight;
-        this.profit = profit;
+        this.max_occurence = Number(max_occurence);
+        this.price = Number(price);
         this.get_html_tag = function() {
             const tag = `
             <div class="item_card">
                 <div class="item_card_name">${this.name}</div>
                 <div class="item_card_info">
-                    <div class="item_card_weight">${this.weight} kg</div>
-                    <div class="item_card_profit">Rp${this.profit}</div>
+                    <div class="item_card_weight">${this.max_occurence} kg</div>
+                    <div class="item_card_price">Rp${this.price}</div>
                 </div>
                 <input id="${this.id}" type="checkbox" class="discard_checkbox" style="display: none;">
                 <label for="${this.id}" class="item_card_discard">×</label>
@@ -20,4 +20,4 @@ class Card{
     }   
 }
 
-export default Card;
+export default Item;
